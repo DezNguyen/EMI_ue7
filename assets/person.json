@@ -1,0 +1,19 @@
+{
+     "person": {
+        "name": "Bob",
+        "age": 20,
+        "gender": "männlich",
+        "hobbies": [
+            "Tennis",
+            "Klavier spielen"
+        ],
+        "is_student": true,
+        "education": {
+            "course": "Medieninformatik",
+            "enrollment": "2023",
+            "university": "TU Dresden",
+            "degree": "Bachelor"
+        }
+
+    }
+}
