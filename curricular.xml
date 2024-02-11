@@ -1,0 +1,10 @@
+<curricular>
+    <semester number="1" type="WiSe" year="2023">
+        <module number="1" name="Name" points="100">
+            <course>
+                <lecture room="HSZ/001" day="Mo" block="3" lecturer="Prof. B" />
+                <exercise room="HSZ/001" day="Mo" block="4" />
+            </course>
+        </module>
+    </semester>
+</curricular>
