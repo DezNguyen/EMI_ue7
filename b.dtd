@@ -6,8 +6,8 @@
         <!ELEMENT semester (number)>
         <!ELEMENT number (#PCDATA)>
         <!ATTLIST semester
-                type CDATA #REQUIRED
-                year CDATA #REQUIRED>
+                type CDATA #IMPLIED
+                year CDATA #IMPLIED>
 
         <!-- Module -->
         <!ELEMENT module (course*)>
@@ -22,7 +22,7 @@
                 room CDATA #REQUIRED
                 day CDATA #REQUIRED
                 block CDATA #REQUIRED
-                lecturer CDATA #REQUIRED>
+                lecturer CDATA #IMPLIED>
 
         <!ELEMENT exercise (#PCDATA)>
         <!ATTLIST exercise
