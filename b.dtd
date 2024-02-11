@@ -1,0 +1,34 @@
+<?xml version="1.0"  ?>
+
+<!DOCTYPE curricular [
+        <!ELEMENT curricular (semester*)>
+
+        <!ELEMENT semester (number)>
+        <!ELEMENT number (#PCDATA)>
+        <!-- Term -->
+        <!ELEMENT term (term_type, term_year)>
+        <!ELEMENT term_type (#PCDATA)>
+        <!ELEMENT term_year (#PCDATA)>
+        <!-- End Term -->
+
+        <!-- Module -->
+        <!ELEMENT module (course*)>
+        <!ATTLIST module
+                number CDATA #REQUIRED
+                name CDATA #REQUIRED
+                points CDATA #REQUIRED>
+        <!-- Course -->
+        <!ELEMENT course (lecture*, exercise*)>
+        <!ELEMENT lecture ()>
+        <!ATTLIST lecture
+                room CDATA #REQUIRED
+                day CDATA #REQUIRED
+                block CDATA #REQUIRED
+                lecturer CDATA #REQUIREd>
+
+        <!ELEMENT exercise ()>
+        <!ATTLIST exercise
+                room CDATA #REQUIRED
+                day CDATA #REQUIRED
+                block CDATA #REQUIRED>
+        ]>
