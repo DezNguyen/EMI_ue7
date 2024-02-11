@@ -5,11 +5,9 @@
 
         <!ELEMENT semester (number)>
         <!ELEMENT number (#PCDATA)>
-        <!-- Term -->
-        <!ELEMENT term (term_type, term_year)>
-        <!ELEMENT term_type (#PCDATA)>
-        <!ELEMENT term_year (#PCDATA)>
-        <!-- End Term -->
+        <!ATTLIST semester
+                type CDATA #REQUIRED
+                year CDATA #REQUIRED>
 
         <!-- Module -->
         <!ELEMENT module (course*)>
@@ -19,14 +17,14 @@
                 points CDATA #REQUIRED>
         <!-- Course -->
         <!ELEMENT course (lecture*, exercise*)>
-        <!ELEMENT lecture ()>
+        <!ELEMENT lecture (#PCDATA)>
         <!ATTLIST lecture
                 room CDATA #REQUIRED
                 day CDATA #REQUIRED
                 block CDATA #REQUIRED
-                lecturer CDATA #REQUIREd>
+                lecturer CDATA #REQUIRED>
 
-        <!ELEMENT exercise ()>
+        <!ELEMENT exercise (#PCDATA)>
         <!ATTLIST exercise
                 room CDATA #REQUIRED
                 day CDATA #REQUIRED
