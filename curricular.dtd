@@ -3,9 +3,9 @@
 <!DOCTYPE curricular [
         <!ELEMENT curricular (semester*)>
 
-        <!ELEMENT semester (number)>
-        <!ELEMENT number (#PCDATA)>
+        <!ELEMENT semester (module*)>
         <!ATTLIST semester
+                number CDATA #REQUIRED
                 type CDATA #IMPLIED
                 year CDATA #IMPLIED>
 
